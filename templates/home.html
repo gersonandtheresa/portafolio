@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% if user.is_active %}
+<div class="green">G</div>
+{% else %}
+<div class="red">G</div>
+{% endif %}
+
+
+{% if user.is_authenticated %}
+<div class="green">I</div>
+{% else %}
+<div class="red">I</div>
+{% endif %}
+
+
+{% for post in posts %}
+<div class="card">
+  <div class="card-body">
+    <p><a href="">{{ post.body }}</a></p>
+
+      <div class="image">
+      <img src="{{post.pic.url}}"  style="width:100%">
+      </div>
+
+  </div>
+</div>
+{% endfor %}
+{% endblock content %}

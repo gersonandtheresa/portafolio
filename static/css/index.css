@@ -1,0 +1,44 @@
+.image{
+width:300px;
+
+}
+
+.red{
+width:20px;
+height:20px;
+background-color:red;
+border-radius:50%;
+margin:auto;
+color:white;
+line-height:20px;
+text-align:center;
+}
+.green{
+width:20px;
+height:20px;
+background-color:green;
+border-radius:50%;
+margin:auto;
+color:white;
+line-height:20px;
+text-align:center;
+}
+
+.log{
+width:50%;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin:100px auto;
+  padding:20px;
+}
+
+@media only screen and (max-width:800px) {
+
+.log{
+width:90%;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin:100px auto;
+  padding:20px;
+}
+
+
+}
